@@ -50,8 +50,8 @@ public class StatisticsService {
     public int getMonthsAboveAverage(int[] sales) {
         int monthsAboveAverage = 0;
         int average = getAverageMonthlySales(sales);
-        for (int a : sales) {
-            if (a > average) {
+        for (int averageSales : sales) {
+            if (averageSales > average) {
                 monthsAboveAverage += 1;
             }
         }
